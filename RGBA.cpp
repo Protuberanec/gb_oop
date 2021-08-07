@@ -21,9 +21,10 @@ RGBA::RGBA(uint8_t mRed, uint8_t mGreen, uint8_t mBlue, uint8_t mAlpha) : m_red(
                                                                           m_alpha(mAlpha) {}
 
 void RGBA::print() const {
-    cout << "\nred\t: " << static_cast<int>(m_red);
+    cout << "---" << endl;
+    cout << "red\t: " << static_cast<int>(m_red);
     cout << "\ngreen\t: " << static_cast<int>(m_green);
     cout << "\nblue\t: " << static_cast<int>(m_blue);
     cout << "\nalpha\t: " << static_cast<int>(m_alpha);
-    cout << endl;
+    cout << "\n---" << endl;
 }

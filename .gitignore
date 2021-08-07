@@ -1,1 +1,5 @@
 cmake-build-debug/CMakeFiles/OOP.dir/
+*.log
+*.exe
+ cmake-build-debug/CMakeFiles/clion-log.txt
+ cmake-build-debug/CMakeFiles/CMakeOutput.log

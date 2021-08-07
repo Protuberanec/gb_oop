@@ -1,12 +1,15 @@
 //
-// Created by Tr on 29.07.2021.
+// Created by Tr on 07.08.2021.
 //
 
-#ifndef CPP_PROJ_STACK_FIFO_H
-#define CPP_PROJ_STACK_FIFO_H
+#ifndef OOP_STACK_FILO_H
+#define OOP_STACK_FILO_H
+
 
 #include <iostream>
 #include <cstring>
+
+using namespace std;
 
 /*    3. Написать класс, который реализует функциональность стека. Класс Stack должен иметь:
         ◦ private-массив   целых чисел длиной 10;
@@ -18,22 +21,22 @@
 */
 
 template<typename T>
-class FIFO {
+class FILO {
 private:
-    T *fifo_data;
+    T *filo_data;
     int size;
     int last_el_index;
 public:
-    FIFO() : size(10), last_el_index(-1) {
-        fifo_data = new T [size];
-        memset(fifo_data, 0x00, size * sizeof(T));
+    FILO() : size(10), last_el_index(-1) {
+        filo_data = new T [size];
+        memset(filo_data, 0x00, size * sizeof(T));
     }
-    FIFO(int size_) : size(size_), last_el_index(-1) {
-        fifo_data = new T [size_];
-        memset(fifo_data, 0x00, size_ * sizeof(T));
+    FILO(int size_) : size(size_), last_el_index(-1) {
+        filo_data = new T [size_];
+        memset(filo_data, 0x00, size_ * sizeof(T));
     }
-    ~FIFO() {
-        delete [] fifo_data;
+    ~FILO() {
+        delete [] filo_data;
     }
 
     bool push(const T& el);
@@ -45,7 +48,7 @@ public:
     int print() {
         cout << "(";
         for (int i = 0; i < last_el_index+1; i++) {
-            std::cout << fifo_data[i];
+            std::cout << filo_data[i];
             if (i != last_el_index) {
                 cout << " ";
             }
@@ -56,26 +59,21 @@ public:
 };
 
 template<typename T>
-bool FIFO<T>::push(const T& el) {
-    if (last_el_index == size) {
+bool FILO<T>::push(const T& el) {
+    if (last_el_index >= size-1) {
         return false;
     }
-    fifo_data[++last_el_index] = el;
+    filo_data[++last_el_index] = el;
     return true;
 }
 template<typename T>
-bool FIFO<T>::getEl(T &el) {
+bool FILO<T>::getEl(T &el) {
     if (last_el_index < 0) {
         return false;
     }
 
-    el = fifo_data[0];
-
-    for (int i = 1; i < last_el_index+1; i++) {
-        fifo_data[i-1] = fifo_data[i];
-    }
-
-    fifo_data[last_el_index] = 0;
+    el = filo_data[last_el_index];
+    filo_data[last_el_index] = 0;
 
     --last_el_index;
 
@@ -83,21 +81,17 @@ bool FIFO<T>::getEl(T &el) {
 }
 
 template<typename T>
-void FIFO<T>::reset() {
-    while(pop() == true);
+void FILO<T>::reset() {
+    while(pop() == true);   //reset all values in constructor, and when pop or get elements set value to zero
 }
 
 template<typename T>
-bool FIFO<T>::pop() {
+bool FILO<T>::pop() {
     if (last_el_index < 0) {
         return false;
     }
 
-    for (int i = 1; i < last_el_index+1; i++) {
-        fifo_data[i-1] = fifo_data[i];
-    }
-
-    fifo_data[last_el_index] = 0;
+    filo_data[last_el_index] = 0;
 
     --last_el_index;
 
@@ -105,4 +99,4 @@ bool FIFO<T>::pop() {
 }
 
 
-#endif //CPP_PROJ_STACK_FIFO_H
+#endif //OOP_STACK_FILO_H

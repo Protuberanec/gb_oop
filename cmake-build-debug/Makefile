@@ -200,6 +200,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+stack_filo.obj: stack_filo.cpp.obj
+.PHONY : stack_filo.obj
+
+# target to build an object file
+stack_filo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/stack_filo.cpp.obj
+.PHONY : stack_filo.cpp.obj
+
+stack_filo.i: stack_filo.cpp.i
+.PHONY : stack_filo.i
+
+# target to preprocess a source file
+stack_filo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/stack_filo.cpp.i
+.PHONY : stack_filo.cpp.i
+
+stack_filo.s: stack_filo.cpp.s
+.PHONY : stack_filo.s
+
+# target to generate assembly for a file
+stack_filo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/stack_filo.cpp.s
+.PHONY : stack_filo.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,6 +242,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... stack_filo.obj
+	@echo ... stack_filo.i
+	@echo ... stack_filo.s
 .PHONY : help
 
 
