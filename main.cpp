@@ -10,6 +10,7 @@ using namespace std;
  */
 #include "STUDENT.h"
 void TestPersonClass() {
+    cout << "-----------------------------------" << endl;
     cout << "task1: class Person, and Student inherited from person" << endl;
     vector<Student*> groupStudents;
     Student *stud = new Student("Igor", GENDER::MAN, 18);
@@ -58,6 +59,7 @@ void TestPersonClass() {
 */
 #include "fruit.h"
 void TestFruitClass() {
+    cout << "-----------------------------------" << endl;
     cout << "fruit class, and apple, banana, and granny smith" << endl;
 
     Apple a("red");
@@ -68,7 +70,7 @@ void TestFruitClass() {
     std::cout << "My " << b.getName() << " is " << b.getColor() << ".\n";
     std::cout << "My " << c.getName() << " is " << c.getColor() << ".\n";
 
-
+    cout << "-------------OK--------------------" << endl;
 }
 
 /*
