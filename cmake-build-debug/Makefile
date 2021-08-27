@@ -128,53 +128,53 @@ OOP/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/build
 .PHONY : OOP/fast
 
-Power.obj: Power.cpp.obj
-.PHONY : Power.obj
+PERSON.obj: PERSON.cpp.obj
+.PHONY : PERSON.obj
 
 # target to build an object file
-Power.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Power.cpp.obj
-.PHONY : Power.cpp.obj
+PERSON.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/PERSON.cpp.obj
+.PHONY : PERSON.cpp.obj
 
-Power.i: Power.cpp.i
-.PHONY : Power.i
+PERSON.i: PERSON.cpp.i
+.PHONY : PERSON.i
 
 # target to preprocess a source file
-Power.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Power.cpp.i
-.PHONY : Power.cpp.i
+PERSON.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/PERSON.cpp.i
+.PHONY : PERSON.cpp.i
 
-Power.s: Power.cpp.s
-.PHONY : Power.s
+PERSON.s: PERSON.cpp.s
+.PHONY : PERSON.s
 
 # target to generate assembly for a file
-Power.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Power.cpp.s
-.PHONY : Power.cpp.s
+PERSON.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/PERSON.cpp.s
+.PHONY : PERSON.cpp.s
 
-RGBA.obj: RGBA.cpp.obj
-.PHONY : RGBA.obj
+STUDENT.obj: STUDENT.cpp.obj
+.PHONY : STUDENT.obj
 
 # target to build an object file
-RGBA.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/RGBA.cpp.obj
-.PHONY : RGBA.cpp.obj
+STUDENT.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/STUDENT.cpp.obj
+.PHONY : STUDENT.cpp.obj
 
-RGBA.i: RGBA.cpp.i
-.PHONY : RGBA.i
+STUDENT.i: STUDENT.cpp.i
+.PHONY : STUDENT.i
 
 # target to preprocess a source file
-RGBA.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/RGBA.cpp.i
-.PHONY : RGBA.cpp.i
+STUDENT.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/STUDENT.cpp.i
+.PHONY : STUDENT.cpp.i
 
-RGBA.s: RGBA.cpp.s
-.PHONY : RGBA.s
+STUDENT.s: STUDENT.cpp.s
+.PHONY : STUDENT.s
 
 # target to generate assembly for a file
-RGBA.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/RGBA.cpp.s
-.PHONY : RGBA.cpp.s
+STUDENT.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/STUDENT.cpp.s
+.PHONY : STUDENT.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -200,30 +200,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-stack_filo.obj: stack_filo.cpp.obj
-.PHONY : stack_filo.obj
-
-# target to build an object file
-stack_filo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/stack_filo.cpp.obj
-.PHONY : stack_filo.cpp.obj
-
-stack_filo.i: stack_filo.cpp.i
-.PHONY : stack_filo.i
-
-# target to preprocess a source file
-stack_filo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/stack_filo.cpp.i
-.PHONY : stack_filo.cpp.i
-
-stack_filo.s: stack_filo.cpp.s
-.PHONY : stack_filo.s
-
-# target to generate assembly for a file
-stack_filo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/stack_filo.cpp.s
-.PHONY : stack_filo.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -233,18 +209,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... OOP
-	@echo ... Power.obj
-	@echo ... Power.i
-	@echo ... Power.s
-	@echo ... RGBA.obj
-	@echo ... RGBA.i
-	@echo ... RGBA.s
+	@echo ... PERSON.obj
+	@echo ... PERSON.i
+	@echo ... PERSON.s
+	@echo ... STUDENT.obj
+	@echo ... STUDENT.i
+	@echo ... STUDENT.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... stack_filo.obj
-	@echo ... stack_filo.i
-	@echo ... stack_filo.s
 .PHONY : help
 
 
