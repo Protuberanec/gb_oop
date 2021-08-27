@@ -80,12 +80,12 @@ clean: CMakeFiles/OOP.dir/clean
 CMakeFiles/OOP.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=M:\Projects\cpp\GeekBrains\OOP\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target OOP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=M:\Projects\cpp\GeekBrains\OOP\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target OOP"
 .PHONY : CMakeFiles/OOP.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/OOP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start M:\Projects\cpp\GeekBrains\OOP\cmake-build-debug\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start M:\Projects\cpp\GeekBrains\OOP\cmake-build-debug\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/OOP.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start M:\Projects\cpp\GeekBrains\OOP\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/OOP.dir/rule

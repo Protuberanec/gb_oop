@@ -80,12 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/BlackJack.cpp">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/BlackJack.h">
-			<Option target="OOP"/>
-		</Unit>
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/PERSON.cpp">
 			<Option target="OOP"/>
 		</Unit>
