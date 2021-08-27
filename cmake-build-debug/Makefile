@@ -176,6 +176,30 @@ STUDENT.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/STUDENT.cpp.s
 .PHONY : STUDENT.cpp.s
 
+fruit.obj: fruit.cpp.obj
+.PHONY : fruit.obj
+
+# target to build an object file
+fruit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fruit.cpp.obj
+.PHONY : fruit.cpp.obj
+
+fruit.i: fruit.cpp.i
+.PHONY : fruit.i
+
+# target to preprocess a source file
+fruit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fruit.cpp.i
+.PHONY : fruit.cpp.i
+
+fruit.s: fruit.cpp.s
+.PHONY : fruit.s
+
+# target to generate assembly for a file
+fruit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fruit.cpp.s
+.PHONY : fruit.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -215,6 +239,9 @@ help:
 	@echo ... STUDENT.obj
 	@echo ... STUDENT.i
 	@echo ... STUDENT.s
+	@echo ... fruit.obj
+	@echo ... fruit.i
+	@echo ... fruit.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

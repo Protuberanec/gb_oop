@@ -29,6 +29,8 @@ void TestPersonClass() {
         delete stud;
     }
     groupStudents.clear();
+
+    cout << "-------------OK--------------------" << endl;
 }
 
 /*
@@ -54,13 +56,32 @@ void TestPersonClass() {
     My banana is yellow.
     My Granny Smith apple is green.
 */
+#include "fruit.h"
+void TestFruitClass() {
+    cout << "fruit class, and apple, banana, and granny smith" << endl;
 
-//3. Изучить правила игры в Blackjack. Подумать, как написать данную игру на С++, используя объектно-ориентированное программирование.
-// Сколько будет классов в программе? Какие классы будут базовыми, а какие производными?
-// Продумать реализацию игры с помощью классов и записать результаты.
+    Apple a("red");
+    Banana b;
+    GrannySmith c;
+
+    std::cout << "My " << a.getName() << " is " << a.getColor() << ".\n";
+    std::cout << "My " << b.getName() << " is " << b.getColor() << ".\n";
+    std::cout << "My " << c.getName() << " is " << c.getColor() << ".\n";
+
+
+}
+
+/*
+ * 3. Изучить правила игры в Blackjack. Подумать, как написать данную игру на С++, используя объектно-ориентированное программирование.
+ * Сколько будет классов в программе? Какие классы будут базовыми, а какие производными?
+ * Продумать реализацию игры с помощью классов и записать результаты.
+ */
+
 
 int main() {
     TestPersonClass();
+
+    TestFruitClass();
 
     std::cout << "tests passed OK" << std::endl;
     return 0;

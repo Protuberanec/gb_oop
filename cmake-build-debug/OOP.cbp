@@ -92,6 +92,12 @@
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/STUDENT.h">
 			<Option target="OOP"/>
 		</Unit>
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/fruit.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/fruit.h">
+			<Option target="OOP"/>
+		</Unit>
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/main.cpp">
 			<Option target="OOP"/>
 		</Unit>
