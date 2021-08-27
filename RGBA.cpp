@@ -5,7 +5,6 @@
 #include "RGBA.h"
 
 RGBA::RGBA() {
-
     m_red = 10;
     m_green = 100;
     m_blue = 200;

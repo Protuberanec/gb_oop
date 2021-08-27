@@ -84,7 +84,9 @@ bool FIFO<T>::getEl(T &el) {
 
 template<typename T>
 void FIFO<T>::reset() {
-    while(pop() == true);
+//    while(pop() == true);   //very slow
+    memset(fifo_data, 0x00, size*sizeof (T));
+    last_el_index = 0;
 }
 
 template<typename T>
