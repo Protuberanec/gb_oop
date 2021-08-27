@@ -128,6 +128,30 @@ OOP/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/build
 .PHONY : OOP/fast
 
+BlackJack.obj: BlackJack.cpp.obj
+.PHONY : BlackJack.obj
+
+# target to build an object file
+BlackJack.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/BlackJack.cpp.obj
+.PHONY : BlackJack.cpp.obj
+
+BlackJack.i: BlackJack.cpp.i
+.PHONY : BlackJack.i
+
+# target to preprocess a source file
+BlackJack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/BlackJack.cpp.i
+.PHONY : BlackJack.cpp.i
+
+BlackJack.s: BlackJack.cpp.s
+.PHONY : BlackJack.s
+
+# target to generate assembly for a file
+BlackJack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/BlackJack.cpp.s
+.PHONY : BlackJack.cpp.s
+
 PERSON.obj: PERSON.cpp.obj
 .PHONY : PERSON.obj
 
@@ -233,6 +257,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... OOP
+	@echo ... BlackJack.obj
+	@echo ... BlackJack.i
+	@echo ... BlackJack.s
 	@echo ... PERSON.obj
 	@echo ... PERSON.i
 	@echo ... PERSON.s
