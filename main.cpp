@@ -3,6 +3,7 @@
 #include <vector>
 
 #include "figures.h"
+#include "Car.h"
 
 using namespace std;
 /*
@@ -36,9 +37,16 @@ void test_task1() {
   * Обратить внимание на проблему «алмаз смерти».
   */
 void test_task2() {
-     cout << "----------task 2----------" << endl;
-
-     cout << "-------" << endl;
+    cout << "----------task 2----------" << endl;
+    cout << "\t\tcreate car" << endl;
+    Car* car1 = new Car();
+    cout << "\t\tcreate bus" << endl;
+    Bus* bus1 = new Bus();
+    cout << "\t\tcreate passenger car" << endl;
+    PassengerCar* passengerCar1 = new PassengerCar();
+    cout << "\t\tcreate minivan" << endl;
+    Minivan* minivan = new Minivan();
+    cout << "-------" << endl;
 }
 
   /*

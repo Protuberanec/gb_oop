@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\jetBrains\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\jetBrains\apps\CLion\ch-0\212.5080.54\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\jetBrains\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = C:\jetBrains\apps\CLion\ch-0\212.5080.54\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = M:\Projects\cpp\GeekBrains\OOP\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\jetBrains\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\jetBrains\apps\CLion\ch-0\212.5080.54\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\jetBrains\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\jetBrains\apps\CLion\ch-0\212.5080.54\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -152,6 +152,30 @@ BlackJack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/BlackJack.cpp.s
 .PHONY : BlackJack.cpp.s
 
+Car.obj: Car.cpp.obj
+.PHONY : Car.obj
+
+# target to build an object file
+Car.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Car.cpp.obj
+.PHONY : Car.cpp.obj
+
+Car.i: Car.cpp.i
+.PHONY : Car.i
+
+# target to preprocess a source file
+Car.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Car.cpp.i
+.PHONY : Car.cpp.i
+
+Car.s: Car.cpp.s
+.PHONY : Car.s
+
+# target to generate assembly for a file
+Car.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Car.cpp.s
+.PHONY : Car.cpp.s
+
 figures.obj: figures.cpp.obj
 .PHONY : figures.obj
 
@@ -212,6 +236,9 @@ help:
 	@echo ... BlackJack.obj
 	@echo ... BlackJack.i
 	@echo ... BlackJack.s
+	@echo ... Car.obj
+	@echo ... Car.i
+	@echo ... Car.s
 	@echo ... figures.obj
 	@echo ... figures.i
 	@echo ... figures.s
