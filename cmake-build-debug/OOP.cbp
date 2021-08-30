@@ -86,22 +86,10 @@
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/BlackJack.h">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/PERSON.cpp">
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/figures.cpp">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/PERSON.h">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/STUDENT.cpp">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/STUDENT.h">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/fruit.cpp">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/fruit.h">
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/figures.h">
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/main.cpp">

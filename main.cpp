@@ -2,86 +2,65 @@
 #include <assert.h>
 #include <vector>
 
+#include "figures.h"
+
 using namespace std;
 /*
- * 1. Создать класс Person (человек) с полями: имя, возраст, пол и вес. Определить методы переназначения имени, изменения возраста и веса.
- * Создать производный класс Student (студент), имеющий поле года обучения. Определить методы переназначения и увеличения этого значения.
- * Создать счетчик количества созданных студентов. В функции main() создать несколько студентов. По запросу вывести определенного человека.
+ * 1. Создать абстрактный класс Figure (фигура). Его наследниками являются классы Parallelogram (параллелограмм) и Circle (круг).
+ * Класс Parallelogram — базовый для классов Rectangle (прямоугольник), Square (квадрат), Rhombus (ромб).
+ * Для всех классов создать конструкторы. Для класса Figure добавить чисто виртуальную функцию area() (площадь).
+ * Во всех остальных классах переопределить эту функцию, исходя из геометрических формул нахождения площади.
  */
-#include "STUDENT.h"
-void TestPersonClass() {
-    cout << "task1: class Person, and Student inherited from person" << endl;
-    vector<Student*> groupStudents;
-    Student *stud = new Student("Igor", GENDER::MAN, 18);
-    groupStudents.push_back(stud);
-    stud = new Student("Polina", GENDER::WOMAN, 17);
-    groupStudents.push_back(stud);
+void test_task1() {
+    cout << "----------task 1----------" << endl;
+    Parallelogram *parallelogram1 = new Parallelogram(10.0, 50.0, 35.0);
+    cout << parallelogram1->area() << endl;
 
-    stud = new Student();
-    groupStudents.push_back(stud);
+    Circle *circle1 = new Circle(10);
+    cout << circle1->area() << endl;
 
-    groupStudents[0]->printInfo();
-    groupStudents[1]->printInfo();
-    groupStudents[2]->printInfo();
+    Square *square1 = new Square(11);
+    cout << square1->area() << endl;
 
-    //release memory!!! eco action!!!
-    for (auto& stud : groupStudents) {
-        delete stud;
-    }
-    groupStudents.clear();
-
-    cout << "-------------OK--------------------" << endl;
+    Rhombus *rhombus1 = new Rhombus(10,10);
+    cout << rhombus1->area() << endl;
+    cout << "-------" << endl;
 }
 
-/*
- * 2. Создать классы Apple (яблоко) и Banana (банан), которые наследуют класс Fruit (фрукт).
- * У Fruit есть две переменные-члена: name (имя) и color (цвет).
- * Добавить новый класс GrannySmith, который наследует класс Apple.
- int main()
-    {
-        Apple a("red");
-        Banana b;
-        GrannySmith c;
+ /*
+  * 2. Создать класс Car (автомобиль) с полями company (компания) и model (модель).
+  * Классы-наследники: PassengerCar (легковой автомобиль) и Bus (автобус).
+  * От этих классов наследует класс Minivan (минивэн).
+  * Создать конструкторы для каждого из классов, чтобы они выводили данные о классах.
+  * Создать объекты для каждого из классов и посмотреть, в какой последовательности выполняются конструкторы.
+  * Обратить внимание на проблему «алмаз смерти».
+  */
+void test_task2() {
+     cout << "----------task 2----------" << endl;
 
-        std::cout << "My " << a.getName() << " is " << a.getColor() << ".\n";
-        std::cout << "My " << b.getName() << " is " << b.getColor() << ".\n";
-        std::cout << "My " << c.getName() << " is " << c.getColor() << ".\n";
+     cout << "-------" << endl;
+}
 
-        return 0;
-    }
-
-    Код, приведенный выше, должен давать следующий результат:
-
-    My apple is red.
-    My banana is yellow.
-    My Granny Smith apple is green.
+  /*
+Примечание: если использовать виртуальный базовый класс, то объект самого "верхнего" базового класса создает самый "дочерний" класс.
+3. Создать класс: Fraction (дробь). Дробь имеет числитель и знаменатель (например, 3/7 или 9/2). Предусмотреть, чтобы знаменатель не был равен 0. Перегрузить:
+• математические бинарные операторы (+, -, *, /) для выполнения действий с дробями
+• унарный оператор (-)
+• логические операторы сравнения двух дробей (==, !=, <, >, <=, >=).
+Примечание: Поскольку операторы < и >=, > и <= — это логические противоположности, попробуйте перегрузить один через другой.
+Продемонстрировать использование перегруженных операторов.
+4. Создать класс Card, описывающий карту в игре БлэкДжек. У этого класса должно быть три поля: масть, значение карты и положение карты (вверх лицом или рубашкой). Сделать поля масть и значение карты типом перечисления (enum). Положение карты - тип bool. Также в этом классе должно быть два метода:
+• метод Flip(), который переворачивает карту, т.е. если она была рубашкой вверх, то он ее поворачивает лицом вверх, и наоборот.
+• метод GetValue(), который возвращает значение карты, пока можно считать, что туз = 1.
 */
-#include "fruit.h"
-void TestFruitClass() {
-    cout << "fruit class, and apple, banana, and granny smith" << endl;
-
-    Apple a("red");
-    Banana b;
-    GrannySmith c;
-
-    std::cout << "My " << a.getName() << " is " << a.getColor() << ".\n";
-    std::cout << "My " << b.getName() << " is " << b.getColor() << ".\n";
-    std::cout << "My " << c.getName() << " is " << c.getColor() << ".\n";
 
 
-}
-
-/*
- * 3. Изучить правила игры в Blackjack. Подумать, как написать данную игру на С++, используя объектно-ориентированное программирование.
- * Сколько будет классов в программе? Какие классы будут базовыми, а какие производными?
- * Продумать реализацию игры с помощью классов и записать результаты.
- */
 
 
 int main() {
-    TestPersonClass();
 
-    TestFruitClass();
+    test_task1();
+    test_task2();
 
     std::cout << "tests passed OK" << std::endl;
     return 0;

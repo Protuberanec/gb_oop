@@ -6,6 +6,7 @@
 #define OOP_BLACKJACK_H
 
 #include <list>
+#include <vector>
 
 using namespace std;
 

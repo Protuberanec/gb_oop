@@ -152,77 +152,29 @@ BlackJack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/BlackJack.cpp.s
 .PHONY : BlackJack.cpp.s
 
-PERSON.obj: PERSON.cpp.obj
-.PHONY : PERSON.obj
+figures.obj: figures.cpp.obj
+.PHONY : figures.obj
 
 # target to build an object file
-PERSON.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/PERSON.cpp.obj
-.PHONY : PERSON.cpp.obj
+figures.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/figures.cpp.obj
+.PHONY : figures.cpp.obj
 
-PERSON.i: PERSON.cpp.i
-.PHONY : PERSON.i
-
-# target to preprocess a source file
-PERSON.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/PERSON.cpp.i
-.PHONY : PERSON.cpp.i
-
-PERSON.s: PERSON.cpp.s
-.PHONY : PERSON.s
-
-# target to generate assembly for a file
-PERSON.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/PERSON.cpp.s
-.PHONY : PERSON.cpp.s
-
-STUDENT.obj: STUDENT.cpp.obj
-.PHONY : STUDENT.obj
-
-# target to build an object file
-STUDENT.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/STUDENT.cpp.obj
-.PHONY : STUDENT.cpp.obj
-
-STUDENT.i: STUDENT.cpp.i
-.PHONY : STUDENT.i
+figures.i: figures.cpp.i
+.PHONY : figures.i
 
 # target to preprocess a source file
-STUDENT.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/STUDENT.cpp.i
-.PHONY : STUDENT.cpp.i
+figures.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/figures.cpp.i
+.PHONY : figures.cpp.i
 
-STUDENT.s: STUDENT.cpp.s
-.PHONY : STUDENT.s
-
-# target to generate assembly for a file
-STUDENT.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/STUDENT.cpp.s
-.PHONY : STUDENT.cpp.s
-
-fruit.obj: fruit.cpp.obj
-.PHONY : fruit.obj
-
-# target to build an object file
-fruit.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fruit.cpp.obj
-.PHONY : fruit.cpp.obj
-
-fruit.i: fruit.cpp.i
-.PHONY : fruit.i
-
-# target to preprocess a source file
-fruit.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fruit.cpp.i
-.PHONY : fruit.cpp.i
-
-fruit.s: fruit.cpp.s
-.PHONY : fruit.s
+figures.s: figures.cpp.s
+.PHONY : figures.s
 
 # target to generate assembly for a file
-fruit.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fruit.cpp.s
-.PHONY : fruit.cpp.s
+figures.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/figures.cpp.s
+.PHONY : figures.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -260,15 +212,9 @@ help:
 	@echo ... BlackJack.obj
 	@echo ... BlackJack.i
 	@echo ... BlackJack.s
-	@echo ... PERSON.obj
-	@echo ... PERSON.i
-	@echo ... PERSON.s
-	@echo ... STUDENT.obj
-	@echo ... STUDENT.i
-	@echo ... STUDENT.s
-	@echo ... fruit.obj
-	@echo ... fruit.i
-	@echo ... fruit.s
+	@echo ... figures.obj
+	@echo ... figures.i
+	@echo ... figures.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
