@@ -176,6 +176,30 @@ Car.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Car.cpp.s
 .PHONY : Car.cpp.s
 
+Card.obj: Card.cpp.obj
+.PHONY : Card.obj
+
+# target to build an object file
+Card.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Card.cpp.obj
+.PHONY : Card.cpp.obj
+
+Card.i: Card.cpp.i
+.PHONY : Card.i
+
+# target to preprocess a source file
+Card.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Card.cpp.i
+.PHONY : Card.cpp.i
+
+Card.s: Card.cpp.s
+.PHONY : Card.s
+
+# target to generate assembly for a file
+Card.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Card.cpp.s
+.PHONY : Card.cpp.s
+
 figures.obj: figures.cpp.obj
 .PHONY : figures.obj
 
@@ -199,6 +223,30 @@ figures.s: figures.cpp.s
 figures.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/figures.cpp.s
 .PHONY : figures.cpp.s
+
+fraction.obj: fraction.cpp.obj
+.PHONY : fraction.obj
+
+# target to build an object file
+fraction.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fraction.cpp.obj
+.PHONY : fraction.cpp.obj
+
+fraction.i: fraction.cpp.i
+.PHONY : fraction.i
+
+# target to preprocess a source file
+fraction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fraction.cpp.i
+.PHONY : fraction.cpp.i
+
+fraction.s: fraction.cpp.s
+.PHONY : fraction.s
+
+# target to generate assembly for a file
+fraction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fraction.cpp.s
+.PHONY : fraction.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -239,9 +287,15 @@ help:
 	@echo ... Car.obj
 	@echo ... Car.i
 	@echo ... Car.s
+	@echo ... Card.obj
+	@echo ... Card.i
+	@echo ... Card.s
 	@echo ... figures.obj
 	@echo ... figures.i
 	@echo ... figures.s
+	@echo ... fraction.obj
+	@echo ... fraction.i
+	@echo ... fraction.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
