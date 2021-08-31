@@ -80,22 +80,34 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/PERSON.cpp">
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/BlackJack.cpp">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/PERSON.h">
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/BlackJack.h">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/STUDENT.cpp">
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/Car.cpp">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/STUDENT.h">
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/Car.h">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/fruit.cpp">
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/Card.cpp">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/fruit.h">
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/Card.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/figures.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/figures.h">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/fraction.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/fraction.h">
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/main.cpp">

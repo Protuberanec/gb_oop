@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\jetBrains\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\jetBrains\apps\CLion\ch-0\212.5080.54\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\jetBrains\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = C:\jetBrains\apps\CLion\ch-0\212.5080.54\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = M:\Projects\cpp\GeekBrains\OOP\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\jetBrains\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\jetBrains\apps\CLion\ch-0\212.5080.54\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\jetBrains\apps\CLion\ch-0\212.4746.93\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\jetBrains\apps\CLion\ch-0\212.5080.54\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -128,77 +128,125 @@ OOP/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/build
 .PHONY : OOP/fast
 
-PERSON.obj: PERSON.cpp.obj
-.PHONY : PERSON.obj
+BlackJack.obj: BlackJack.cpp.obj
+.PHONY : BlackJack.obj
 
 # target to build an object file
-PERSON.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/PERSON.cpp.obj
-.PHONY : PERSON.cpp.obj
+BlackJack.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/BlackJack.cpp.obj
+.PHONY : BlackJack.cpp.obj
 
-PERSON.i: PERSON.cpp.i
-.PHONY : PERSON.i
+BlackJack.i: BlackJack.cpp.i
+.PHONY : BlackJack.i
 
 # target to preprocess a source file
-PERSON.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/PERSON.cpp.i
-.PHONY : PERSON.cpp.i
+BlackJack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/BlackJack.cpp.i
+.PHONY : BlackJack.cpp.i
 
-PERSON.s: PERSON.cpp.s
-.PHONY : PERSON.s
+BlackJack.s: BlackJack.cpp.s
+.PHONY : BlackJack.s
 
 # target to generate assembly for a file
-PERSON.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/PERSON.cpp.s
-.PHONY : PERSON.cpp.s
+BlackJack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/BlackJack.cpp.s
+.PHONY : BlackJack.cpp.s
 
-STUDENT.obj: STUDENT.cpp.obj
-.PHONY : STUDENT.obj
+Car.obj: Car.cpp.obj
+.PHONY : Car.obj
 
 # target to build an object file
-STUDENT.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/STUDENT.cpp.obj
-.PHONY : STUDENT.cpp.obj
+Car.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Car.cpp.obj
+.PHONY : Car.cpp.obj
 
-STUDENT.i: STUDENT.cpp.i
-.PHONY : STUDENT.i
+Car.i: Car.cpp.i
+.PHONY : Car.i
 
 # target to preprocess a source file
-STUDENT.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/STUDENT.cpp.i
-.PHONY : STUDENT.cpp.i
+Car.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Car.cpp.i
+.PHONY : Car.cpp.i
 
-STUDENT.s: STUDENT.cpp.s
-.PHONY : STUDENT.s
+Car.s: Car.cpp.s
+.PHONY : Car.s
 
 # target to generate assembly for a file
-STUDENT.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/STUDENT.cpp.s
-.PHONY : STUDENT.cpp.s
+Car.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Car.cpp.s
+.PHONY : Car.cpp.s
 
-fruit.obj: fruit.cpp.obj
-.PHONY : fruit.obj
+Card.obj: Card.cpp.obj
+.PHONY : Card.obj
 
 # target to build an object file
-fruit.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fruit.cpp.obj
-.PHONY : fruit.cpp.obj
+Card.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Card.cpp.obj
+.PHONY : Card.cpp.obj
 
-fruit.i: fruit.cpp.i
-.PHONY : fruit.i
+Card.i: Card.cpp.i
+.PHONY : Card.i
 
 # target to preprocess a source file
-fruit.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fruit.cpp.i
-.PHONY : fruit.cpp.i
+Card.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Card.cpp.i
+.PHONY : Card.cpp.i
 
-fruit.s: fruit.cpp.s
-.PHONY : fruit.s
+Card.s: Card.cpp.s
+.PHONY : Card.s
 
 # target to generate assembly for a file
-fruit.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fruit.cpp.s
-.PHONY : fruit.cpp.s
+Card.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Card.cpp.s
+.PHONY : Card.cpp.s
+
+figures.obj: figures.cpp.obj
+.PHONY : figures.obj
+
+# target to build an object file
+figures.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/figures.cpp.obj
+.PHONY : figures.cpp.obj
+
+figures.i: figures.cpp.i
+.PHONY : figures.i
+
+# target to preprocess a source file
+figures.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/figures.cpp.i
+.PHONY : figures.cpp.i
+
+figures.s: figures.cpp.s
+.PHONY : figures.s
+
+# target to generate assembly for a file
+figures.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/figures.cpp.s
+.PHONY : figures.cpp.s
+
+fraction.obj: fraction.cpp.obj
+.PHONY : fraction.obj
+
+# target to build an object file
+fraction.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fraction.cpp.obj
+.PHONY : fraction.cpp.obj
+
+fraction.i: fraction.cpp.i
+.PHONY : fraction.i
+
+# target to preprocess a source file
+fraction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fraction.cpp.i
+.PHONY : fraction.cpp.i
+
+fraction.s: fraction.cpp.s
+.PHONY : fraction.s
+
+# target to generate assembly for a file
+fraction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fraction.cpp.s
+.PHONY : fraction.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -233,15 +281,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... OOP
-	@echo ... PERSON.obj
-	@echo ... PERSON.i
-	@echo ... PERSON.s
-	@echo ... STUDENT.obj
-	@echo ... STUDENT.i
-	@echo ... STUDENT.s
-	@echo ... fruit.obj
-	@echo ... fruit.i
-	@echo ... fruit.s
+	@echo ... BlackJack.obj
+	@echo ... BlackJack.i
+	@echo ... BlackJack.s
+	@echo ... Car.obj
+	@echo ... Car.i
+	@echo ... Car.s
+	@echo ... Card.obj
+	@echo ... Card.i
+	@echo ... Card.s
+	@echo ... figures.obj
+	@echo ... figures.i
+	@echo ... figures.s
+	@echo ... fraction.obj
+	@echo ... fraction.i
+	@echo ... fraction.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
