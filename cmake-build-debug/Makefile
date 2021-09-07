@@ -176,30 +176,6 @@ BlackJack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/BlackJack.cpp.s
 .PHONY : BlackJack.cpp.s
 
-Car.obj: Car.cpp.obj
-.PHONY : Car.obj
-
-# target to build an object file
-Car.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Car.cpp.obj
-.PHONY : Car.cpp.obj
-
-Car.i: Car.cpp.i
-.PHONY : Car.i
-
-# target to preprocess a source file
-Car.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Car.cpp.i
-.PHONY : Car.cpp.i
-
-Car.s: Car.cpp.s
-.PHONY : Car.s
-
-# target to generate assembly for a file
-Car.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Car.cpp.s
-.PHONY : Car.cpp.s
-
 Card.obj: Card.cpp.obj
 .PHONY : Card.obj
 
@@ -224,53 +200,29 @@ Card.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Card.cpp.s
 .PHONY : Card.cpp.s
 
-figures.obj: figures.cpp.obj
-.PHONY : figures.obj
+Hand.obj: Hand.cpp.obj
+.PHONY : Hand.obj
 
 # target to build an object file
-figures.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/figures.cpp.obj
-.PHONY : figures.cpp.obj
+Hand.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Hand.cpp.obj
+.PHONY : Hand.cpp.obj
 
-figures.i: figures.cpp.i
-.PHONY : figures.i
-
-# target to preprocess a source file
-figures.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/figures.cpp.i
-.PHONY : figures.cpp.i
-
-figures.s: figures.cpp.s
-.PHONY : figures.s
-
-# target to generate assembly for a file
-figures.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/figures.cpp.s
-.PHONY : figures.cpp.s
-
-fraction.obj: fraction.cpp.obj
-.PHONY : fraction.obj
-
-# target to build an object file
-fraction.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fraction.cpp.obj
-.PHONY : fraction.cpp.obj
-
-fraction.i: fraction.cpp.i
-.PHONY : fraction.i
+Hand.i: Hand.cpp.i
+.PHONY : Hand.i
 
 # target to preprocess a source file
-fraction.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fraction.cpp.i
-.PHONY : fraction.cpp.i
+Hand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Hand.cpp.i
+.PHONY : Hand.cpp.i
 
-fraction.s: fraction.cpp.s
-.PHONY : fraction.s
+Hand.s: Hand.cpp.s
+.PHONY : Hand.s
 
 # target to generate assembly for a file
-fraction.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/fraction.cpp.s
-.PHONY : fraction.cpp.s
+Hand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Hand.cpp.s
+.PHONY : Hand.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -311,18 +263,12 @@ help:
 	@echo ... BlackJack.obj
 	@echo ... BlackJack.i
 	@echo ... BlackJack.s
-	@echo ... Car.obj
-	@echo ... Car.i
-	@echo ... Car.s
 	@echo ... Card.obj
 	@echo ... Card.i
 	@echo ... Card.s
-	@echo ... figures.obj
-	@echo ... figures.i
-	@echo ... figures.s
-	@echo ... fraction.obj
-	@echo ... fraction.i
-	@echo ... fraction.s
+	@echo ... Hand.obj
+	@echo ... Hand.i
+	@echo ... Hand.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -92,28 +92,16 @@
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/BlackJack.h">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/Car.cpp">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/Car.h">
-			<Option target="OOP"/>
-		</Unit>
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/Card.cpp">
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/Card.h">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/figures.cpp">
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/Hand.cpp">
 			<Option target="OOP"/>
 		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/figures.h">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/fraction.cpp">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/fraction.h">
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/Hand.h">
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/main.cpp">
