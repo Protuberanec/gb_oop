@@ -128,6 +128,30 @@ OOP/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/build
 .PHONY : OOP/fast
 
+ArrayInt.obj: ArrayInt.cpp.obj
+.PHONY : ArrayInt.obj
+
+# target to build an object file
+ArrayInt.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/ArrayInt.cpp.obj
+.PHONY : ArrayInt.cpp.obj
+
+ArrayInt.i: ArrayInt.cpp.i
+.PHONY : ArrayInt.i
+
+# target to preprocess a source file
+ArrayInt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/ArrayInt.cpp.i
+.PHONY : ArrayInt.cpp.i
+
+ArrayInt.s: ArrayInt.cpp.s
+.PHONY : ArrayInt.s
+
+# target to generate assembly for a file
+ArrayInt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/ArrayInt.cpp.s
+.PHONY : ArrayInt.cpp.s
+
 BlackJack.obj: BlackJack.cpp.obj
 .PHONY : BlackJack.obj
 
@@ -281,6 +305,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... OOP
+	@echo ... ArrayInt.obj
+	@echo ... ArrayInt.i
+	@echo ... ArrayInt.s
 	@echo ... BlackJack.obj
 	@echo ... BlackJack.i
 	@echo ... BlackJack.s
