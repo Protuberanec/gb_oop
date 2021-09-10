@@ -248,6 +248,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+myPair.obj: myPair.cpp.obj
+.PHONY : myPair.obj
+
+# target to build an object file
+myPair.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/myPair.cpp.obj
+.PHONY : myPair.cpp.obj
+
+myPair.i: myPair.cpp.i
+.PHONY : myPair.i
+
+# target to preprocess a source file
+myPair.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/myPair.cpp.i
+.PHONY : myPair.cpp.i
+
+myPair.s: myPair.cpp.s
+.PHONY : myPair.s
+
+# target to generate assembly for a file
+myPair.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/myPair.cpp.s
+.PHONY : myPair.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -272,6 +296,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... myPair.obj
+	@echo ... myPair.i
+	@echo ... myPair.s
 .PHONY : help
 
 
