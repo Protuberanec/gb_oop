@@ -38,3 +38,9 @@ void Card::Flip() {
     status != status;
 
 }
+
+Card::Card(const Card *other) {
+    suit = other->suit;
+    value = other->value;
+    status = other->status;
+}

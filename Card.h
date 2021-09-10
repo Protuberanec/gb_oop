@@ -35,10 +35,10 @@ enum class CARD_VALUE {
     EIGHT = 8,
     NINE = 9,
     TEN = 10,
-    JACK = 11,
-    QUEEN = 12,
-    KING = 13,
-    ACE = 14,
+    JACK = 2,
+    QUEEN = 3,
+    KING = 4,
+    ACE = 11,
     JOKER = 15,
 };
 
@@ -49,6 +49,7 @@ private:
     bool status;    //face up, face down
 public:
     Card();
+    Card(const Card* other);
 
     Card(SUIT suit, CARD_VALUE value, bool status);
 
@@ -61,6 +62,9 @@ public:
 
     void Flip();
 };
+
+
+
 
 
 #endif //OOP_CARD_H

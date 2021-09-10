@@ -51,7 +51,7 @@ using suit = int;
 /* карты в колоде */
 class DeckCards {
 private:
-    vector<pair<suit, cardType>> deck;
+    list<pair<suit, cardType>> deck;
 public:
     int shuffle();
     int getCard();
