@@ -176,6 +176,30 @@ Card.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Card.cpp.s
 .PHONY : Card.cpp.s
 
+GenericPlayer.obj: GenericPlayer.cpp.obj
+.PHONY : GenericPlayer.obj
+
+# target to build an object file
+GenericPlayer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/GenericPlayer.cpp.obj
+.PHONY : GenericPlayer.cpp.obj
+
+GenericPlayer.i: GenericPlayer.cpp.i
+.PHONY : GenericPlayer.i
+
+# target to preprocess a source file
+GenericPlayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/GenericPlayer.cpp.i
+.PHONY : GenericPlayer.cpp.i
+
+GenericPlayer.s: GenericPlayer.cpp.s
+.PHONY : GenericPlayer.s
+
+# target to generate assembly for a file
+GenericPlayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/GenericPlayer.cpp.s
+.PHONY : GenericPlayer.cpp.s
+
 Hand.obj: Hand.cpp.obj
 .PHONY : Hand.obj
 
@@ -263,6 +287,9 @@ help:
 	@echo ... Card.obj
 	@echo ... Card.i
 	@echo ... Card.s
+	@echo ... GenericPlayer.obj
+	@echo ... GenericPlayer.i
+	@echo ... GenericPlayer.s
 	@echo ... Hand.obj
 	@echo ... Hand.i
 	@echo ... Hand.s

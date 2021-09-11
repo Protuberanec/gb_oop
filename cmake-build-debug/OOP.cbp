@@ -92,6 +92,12 @@
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/Card.h">
 			<Option target="OOP"/>
 		</Unit>
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/GenericPlayer.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/GenericPlayer.h">
+			<Option target="OOP"/>
+		</Unit>
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/Hand.cpp">
 			<Option target="OOP"/>
 		</Unit>
