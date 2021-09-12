@@ -1,8 +1,20 @@
 #include <iostream>
+#include <iomanip>
 #include <assert.h>
+#include <cstring>
 #include <vector>
 #include <map>
 #include <time.h>
+#include <bitset>
+#include <sstream>
+
+#include <cassert>
+#include <iostream>
+#include <sstream>
+#include <map>
+#include <string>
+#include <vector>
+#include <set>
 
 #include "myPair.h"
 
@@ -14,20 +26,97 @@ using namespace std;
  *  Пример неправильных введенных строк:
  */
 
+pair<bool, int> GetNumber(bool infiniteWaitNumber = false, istream& input = cin) {
+    int number;
+    cout << "I wait a number : ";
+
+    string strInput;
+    getline(input, strInput);
+
+    while(1) {
+        int i = 0;
+        while (strInput[i] >= 0x30 && strInput[i] <= 0x39) {
+            i++;
+        }
+        if (i < strInput.size()) {
+            cout << "\nplease try again, I wait a number : ";
+            if (infiniteWaitNumber == false) {
+                cout << endl;
+                //can be used as recursive function to call again GetNumber(...)
+                return {false, 0};
+            }
+            strInput.clear();
+            getline(input, strInput);
+        }
+        else {
+            break;
+        }
+    }
+
+    cout << endl;
+    return {true, number};
+}
+
 void test_task1() {
     cout << "----------task 1----------" << endl;
-
-
+    {   //test is not number
+        stringstream tempInputCin;
+        tempInputCin.str("fdasf4241");
+        auto res = GetNumber(false, tempInputCin);
+        assert(res.first == false);
+    }
+    {   //test is not number
+        stringstream tempInputCin;
+        tempInputCin.str("14324nffa");
+        auto res = GetNumber(false, tempInputCin);
+        assert(res.first == false);
+    }
+    {   //test is not number
+        stringstream tempInputCin;
+        tempInputCin.str("sdaf.432fs143fdsf24nffa432");
+        auto res = GetNumber(false, tempInputCin);
+        assert(res.first == false);
+    }
+    {//test is number
+        stringstream tempInputCin;
+        tempInputCin.str("14324");
+        auto res = GetNumber(false, tempInputCin);
+        assert(res.first == true);
+    }
+    cout << "\t---infinite test---" << endl;
+    GetNumber(true);    //infinite enter number
     cout << "-------" << endl;
 }
 
 /*
  * 2. Создать собственный манипулятор endll для стандартного потока вывода, который выводит два перевода строки и сбрасывает буфер.
  */
+
+struct toggled_ostream
+{
+    std::ostream& os;
+};
+
+
+class toggle_t {};
+constexpr toggle_t endll;
+
+inline toggled_ostream operator << (std::ostream& os, toggle_t)
+{
+    os << endl << endl;
+    return { os };
+}
+
+template <typename T>
+std::ostream& operator << (toggled_ostream tos, const T& v)
+{
+    return tos.os << v;
+}
+
 void test_task2() {
     cout << "----------task 2----------" << endl;
-
-
+    cout << "after it will used double next string" << endll;
+    cout << "test1" << endl;
     cout << "-------" << endl;
 }
 
@@ -69,6 +158,32 @@ void test_task5() {
     cout << "-------" << endl;
 }
 
+struct Date {
+    int year;
+    int month;
+    int day;
+
+    Date(int year, int month, int day) : year(year), month(month), day(day) {}
+};
+
+ostream& operator<< (ostream &out, const Date &date)
+{
+    out << "Date: " << date.day << ". " << date.month << ". " << date.year << "\n";
+    return out;
+}
+
+istream& operator>> (istream &in, Date &date)
+{
+    // обратите внимание, параметр date (объект класса Date) должен быть не константным, чтобы мы имели возможность изменить члены класса
+    in >> date.day;
+    in >> date.month;
+    in >> date.year;
+
+    return in;
+}
+
+
+
 int main() {
     test_task1();
     test_task2();
@@ -78,3 +193,15 @@ int main() {
     std::cout << "tests passed OK" << std::endl;
     return 0;
 }
+
+
+
+
+//Date temp(2021,12,14);
+//
+//cin >> temp;
+//
+//cout << temp << endl;
+//
+//
+//return 0;
