@@ -32,3 +32,8 @@ void Hand::clear() {
 int Hand::getValue() const {
     return sumPoints;
 }
+
+void Hand::FlipCard(int numCard) {
+    cardsInHand.at(numCard)->Flip();
+}
+

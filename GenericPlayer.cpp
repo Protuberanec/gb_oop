@@ -4,12 +4,16 @@
 
 #include "GenericPlayer.h"
 
-void GenericPlayer::Bust() {
-    std::cout << name << std::endl;
+void GenericPlayer::Bust() const {
+    std::cout << m_Name << std::endl;
 
     std::cout << (IsBoosted() == true ? "excess" : "no excess") << std::endl;
 }
 
-bool GenericPlayer::IsBoosted() {
+bool GenericPlayer::IsBoosted() const {
     return getValue() > 21;
+}
+
+GenericPlayer::~GenericPlayer() {
+
 }

@@ -22,11 +22,18 @@
 
 class GenericPlayer : public Hand {
 private:
-    std::string name;
+    std::string m_Name;
+    friend ostream& operator<<(ostream& os, const GenericPlayer& aGenericPlayer);
 public:
-    virtual bool IsHitting() = 0;
-    bool IsBoosted();
-    void Bust();
+    GenericPlayer(const string& name = "") : m_Name(name) {};
+    virtual ~GenericPlayer();
+
+    virtual bool IsHitting() const = 0;
+    bool IsBoosted() const; //points more than 21
+    void Bust() const;
+    std::string GetName() const {
+        return m_Name;
+    }
 };
 
 

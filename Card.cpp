@@ -4,43 +4,59 @@
 
 #include "Card.h"
 
+ostream& operator<<(ostream& os, const Card& aCard)
+{
+    const string RANKS[] = { "0", "A", "2", "3", "4", "5", "6", "7", "8", "9","10", "J", "Q", "K" };
+    const string SUITS[] = { "c", "d", "h", "s" };
+
+    if (aCard.m_IsFaceUp)
+    {
+        os << RANKS[static_cast<int>(aCard.m_Rank)] << SUITS[static_cast<int>(aCard.m_Suit)];
+    }
+    else
+    {
+        os << "face down";
+    }
+
+    return os;
+}
+
 Card::Card() {
-    status = FACE_UP;
+    m_IsFaceUp = FACE_UP;
 }
 
 SUIT Card::getSuit() const {
-    return suit;
+    return m_Suit;
 }
 
 void Card::setSuit(SUIT suit) {
-    Card::suit = suit;
+    Card::m_Suit = suit;
 }
 
 CARD_VALUE Card::getValue() const {
-    return value;
+    return m_Rank;
 }
 
 void Card::setValue(CARD_VALUE value) {
-    Card::value = value;
+    Card::m_Rank = value;
 }
 
 bool Card::isStatus() const {
-    return status;
+    return m_IsFaceUp;
 }
 
 void Card::setStatus(bool status) {
-    Card::status = status;
+    Card::m_IsFaceUp = status;
 }
 
-Card::Card(SUIT suit, CARD_VALUE value, bool status) : suit(suit), value(value), status(status) {}
+Card::Card(SUIT suit, CARD_VALUE value, bool status) : m_Suit(suit), m_Rank(value), m_IsFaceUp(status) {}
 
 void Card::Flip() {
-    status != status;
-
+    m_IsFaceUp != m_IsFaceUp;
 }
 
 Card::Card(const Card *other) {
-    suit = other->suit;
-    value = other->value;
-    status = other->status;
+    m_Suit = other->m_Suit;
+    m_Rank = other->m_Rank;
+    m_IsFaceUp = other->m_IsFaceUp;
 }

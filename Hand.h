@@ -29,6 +29,7 @@ public :
     void add(const Card* newCard);
     void clear();
     int getValue() const;
+    void FlipCard(int numCard = 0);
 };
 
 

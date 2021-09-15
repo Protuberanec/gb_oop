@@ -5,6 +5,11 @@
 #ifndef OOP_CARD_H
 #define OOP_CARD_H
 
+#include <iostream>
+
+using namespace std;
+
+
  /*
   * 4. Создать класс Card, описывающий карту в игре БлэкДжек. У этого класса должно быть три поля:
   * масть, значение карты и положение карты (вверх лицом или рубашкой).
@@ -44,9 +49,9 @@ enum class CARD_VALUE {
 
 class Card {
 private:
-    SUIT suit;
-    CARD_VALUE value;
-    bool status;    //face up, face down
+    SUIT m_Suit;
+    CARD_VALUE m_Rank;
+    bool m_IsFaceUp;    //face up, face down
 public:
     Card();
     Card(const Card* other);
@@ -61,6 +66,8 @@ public:
     void setStatus(bool status);
 
     void Flip();
+
+    friend ostream& operator<<(ostream& os, const Card& aCard);
 };
 
 

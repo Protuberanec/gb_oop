@@ -132,6 +132,7 @@ void test_task2() {
 void test_task3() {
     cout << "----------task 3----------" << endl;
 
+    cout << "realisation in files..." << endl;
 
     cout << "-------" << endl;
 }
@@ -143,6 +144,7 @@ void test_task3() {
 void test_task4() {
     cout << "----------task 4----------" << endl;
 
+    cout << "realisation in files..." << endl;
 
     cout << "-------" << endl;
 }
@@ -153,8 +155,7 @@ void test_task4() {
  */
 void test_task5() {
     cout << "----------task 5----------" << endl;
-
-
+    cout << "realisation in files..." << endl;
     cout << "-------" << endl;
 }
 
