@@ -176,6 +176,30 @@ Card.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Card.cpp.s
 .PHONY : Card.cpp.s
 
+Date.obj: Date.cpp.obj
+.PHONY : Date.obj
+
+# target to build an object file
+Date.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Date.cpp.obj
+.PHONY : Date.cpp.obj
+
+Date.i: Date.cpp.i
+.PHONY : Date.i
+
+# target to preprocess a source file
+Date.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Date.cpp.i
+.PHONY : Date.cpp.i
+
+Date.s: Date.cpp.s
+.PHONY : Date.s
+
+# target to generate assembly for a file
+Date.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/Date.cpp.s
+.PHONY : Date.cpp.s
+
 GenericPlayer.obj: GenericPlayer.cpp.obj
 .PHONY : GenericPlayer.obj
 
@@ -296,30 +320,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-myPair.obj: myPair.cpp.obj
-.PHONY : myPair.obj
-
-# target to build an object file
-myPair.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/myPair.cpp.obj
-.PHONY : myPair.cpp.obj
-
-myPair.i: myPair.cpp.i
-.PHONY : myPair.i
-
-# target to preprocess a source file
-myPair.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/myPair.cpp.i
-.PHONY : myPair.cpp.i
-
-myPair.s: myPair.cpp.s
-.PHONY : myPair.s
-
-# target to generate assembly for a file
-myPair.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOP.dir\build.make CMakeFiles/OOP.dir/myPair.cpp.s
-.PHONY : myPair.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -335,6 +335,9 @@ help:
 	@echo ... Card.obj
 	@echo ... Card.i
 	@echo ... Card.s
+	@echo ... Date.obj
+	@echo ... Date.i
+	@echo ... Date.s
 	@echo ... GenericPlayer.obj
 	@echo ... GenericPlayer.i
 	@echo ... GenericPlayer.s
@@ -350,9 +353,6 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... myPair.obj
-	@echo ... myPair.i
-	@echo ... myPair.s
 .PHONY : help
 
 

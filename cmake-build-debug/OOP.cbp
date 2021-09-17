@@ -92,6 +92,12 @@
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/Card.h">
 			<Option target="OOP"/>
 		</Unit>
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/Date.cpp">
+			<Option target="OOP"/>
+		</Unit>
+		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/Date.h">
+			<Option target="OOP"/>
+		</Unit>
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/GenericPlayer.cpp">
 			<Option target="OOP"/>
 		</Unit>
@@ -117,12 +123,6 @@
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/main.cpp">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/myPair.cpp">
-			<Option target="OOP"/>
-		</Unit>
-		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/myPair.h">
 			<Option target="OOP"/>
 		</Unit>
 		<Unit filename="M:/Projects/cpp/GeekBrains/OOP/CMakeLists.txt">
